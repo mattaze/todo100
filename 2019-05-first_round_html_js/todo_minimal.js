@@ -4,6 +4,8 @@
  * todo100 - 001 Minimal HTML and Javascript
  *
  * See todo_minimal.html header section for more details.
+ * 
+ * todo: 2019-05-27 - implement Remove task, html and js needed.
  */
 
 /** Task input element */
