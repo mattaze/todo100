@@ -1,11 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>Todo 100 - 2019-05 - html js</title>
-  </head>
-  <body>
-    <input id="input-text" type="text">
-  </body>
-  <script src="todo_minimal.js"></script>
+</head>
+
+<body>
+    <style>
+        #todo100-header {
+            background-color: rgb(185, 185, 185)
+        }
+    </style>
+    <header id="todo100-header">
+        <h1>Todo 100 - (001) Minimal HTML and JS</h1>
+        <p>2019-05 - Todo.001 - first application on my personal project to creating Todo applications in various technologies and
+            techniques (whether good or bad).</p>
+        <ul>
+            <li>2019-05-27 - Todo 001</li>
+            <li>Minimum Requirements: Create - View - Complete</li>
+            <li>How I most likely would make a one day todo application.</li>
+            <li>Minimal HTML and JS</li>
+            <li>No-style, no storage, temporary use</li>
+        </ul>
+        <h2>Still to finish 2019-05-27</h2>
+        <ul>
+            <li>Complete task / remove</li>
+        </ul>
+    </header>
+
+    <article>
+        <h1>My Todo</h1>
+        <hr>
+        <!-- <label for="input-text">Task: </label> -->
+        <input id="input-text" type="text">
+        <button id="button-add">Add Task</button>
+
+        <hr>
+        <ul id="list">
+            <li>no tasks</li>
+        </ul>
+    </article>
+</body>
+<script src="todo_minimal.js"></script>
+
 </html>
