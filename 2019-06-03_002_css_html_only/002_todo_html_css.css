@@ -1,0 +1,64 @@
+/** look and style **/
+label {
+	cursor: pointer;
+}
+
+/* removes the text thickening due to overlapping text. */
+.add-label {
+	background: white;
+}
+
+input.reset {
+	display: none;
+}
+
+/* style only part for input, functional part of placement in next section. */
+.checkbox:checked + input.task-input {
+	border: none;
+}
+
+
+/** #### functionality control #### **/
+/* clear space  */
+.add-space {
+	height: 45px;
+}
+
+/* new tasks placed into the add-space area 
+	First pass used relative but each html task would need a different due when adding want placed in a list type view.
+*/
+.task-input, .add-label, .checkbox {
+	position: absolute;
+	top: 75px;
+}
+
+/* more style so add on the right on input box */
+.add-label {
+	left: 205px;
+}
+.checkbox {
+	left: 185px;
+}
+
+/* hide checkboxes in favor for text labels */
+/*.checkbox, .reset {
+	display: none;
+}
+*/
+
+.checkbox:checked + .task-input {
+	pointer-events: none;
+	position: static;
+}
+.checkbox:checked, .checkbox:checked ~ .add-label {
+	display: none;
+}
+
+/* default do not show reset */
+.checkbox ~ .reset {
+	display: none;
+}
+/* once form or check is 'added' then show reset button */
+.checkbox:checked ~ .reset {
+	display: initial;
+}

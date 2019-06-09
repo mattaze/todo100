@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Todo 100 - 2019-05 - html js</title>
+</head>
+
+<body>
+    <article>
+		<link href="002_todo_html_css.css" rel="stylesheet">
+        <h1>My Todo</h1>
+		<div class="add-space">
+			
+		</div>
+		<!--
+		<div class="tasks">
+			<form>
+				<input id="check-1" class="task-control checkbox" type="checkbox">
+				<input class="task-input" required type="text">
+				<label for="check-1" class="add-label">Add</label>
+				
+				<label class="reset" tabindex="0">
+					<input type="reset" class="reset">
+					Remove
+				</label>
+			</form>
+			<form>
+				<input id="check-2" class="task-control checkbox" type="checkbox">
+				<input class="task-input" required type="text">
+				<label for="check-2" class="add-label">Add</label>
+				
+				<label class="reset">
+					<input type="reset" class="reset">
+					Remove
+				</label>
+			</form>
+			<form>
+				<input id="check-3" class="task-control checkbox" type="checkbox">
+				<input class="task-input" required type="text" tabindex="1">
+				<label for="check-3" class="add-label">Add</label>
+				
+				<label class="reset">
+					<input type="reset" class="reset">
+					Remove
+				</label>
+			</form>
+			<form>
+				<input id="check-4" class="task-control checkbox" type="checkbox">
+				<input class="task-input" required type="text" tabindex="1">
+				<label for="check-4" class="add-label">Add</label>
+				
+				<label class="reset">
+					<input type="reset" class="reset">
+					Remove
+				</label>
+			</form>
+		</div>
+		-->
+		
+		<!-- 
+			version without using ID, so only need to copy form block to increase limit of tasks
+			adds limit that add-input-checkbox difficult to bind with label to allow for the sibling selectors to work.
+		-->
+		<div class="tasks">
+			<form>
+				<input class="task-control checkbox" type="checkbox">
+				<input class="task-input" required type="text">
+				<label class="add-label">Add</label>
+				
+				<label class="reset" tabindex="0">
+					<input type="reset" class="reset">
+					Remove
+				</label>
+			</form>
+			<form>
+				<input class="task-control checkbox" type="checkbox">
+				<input class="task-input" required type="text">
+				<label class="add-label">Add</label>
+				<label class="reset">
+					<input type="reset" class="reset">
+					Remove
+				</label>
+			</form>
+			<form>
+				<input class="task-control checkbox" type="checkbox">
+				<input class="task-input" required type="text">
+				<label class="add-label">Add</label>
+				<label class="reset">
+					<input type="reset" class="reset">
+					Remove
+				</label>
+			</form>
+			<form>
+				<input class="task-control checkbox" type="checkbox">
+				<input class="task-input" required type="text">
+				<label class="add-label">Add</label>
+				<label class="reset">
+					<input type="reset" class="reset">
+					Remove
+				</label>
+			</form>
+			<form>
+				<input class="task-control checkbox" type="checkbox">
+				<input class="task-input" required type="text">
+				<label class="add-label">Add</label>
+				<label class="reset">
+					<input type="reset" class="reset">
+					Remove
+				</label>
+			</form>
+		</div>
+    </article>
+	
+    <style>
+        #todo100-header {
+            background-color: rgb(185, 185, 185)
+        }
+    </style>
+    <header id="todo100-header">
+        <h1>Todo 100 - (002) Minimal HTML and CSS</h1>
+        <p>2019-06 - Todo.002 - to creating Todo applications in various technologies and techniques (whether good or bad).</p>
+        <ul>
+            <li>2019-06-03 - Todo 002</li>
+            <li>Minimum Requirements: Create - View - Complete</li>
+            <li>HTML and CSS only</li>
+            <li>Initially was stumped on where to start. Did some light searching.</li>
+			<li>Then came across the Github <a href="https://github.com/mattzeunert/CSS-Todo-App">mattzeunert CSS-Todo-App</a> </li>
+			<li>Tried to read the source but just made less sense, "why is the same html repeated?"</li>
+			<li>Was gonna give up, untill stumped onto blog post by matt zeunert, read the first 2 or 3 lines and stopped. It clicked.</li>
+			<li>Solution below aims to: Pre defined HTML, which limits total tasks to the amount for predefined html (10 tasks)<li>
+			<li>CSS then will stack all task groups so looks like just one. If task checked, it will stack underneath.</li>
+            <li>Most of the CSS is for functional purpose, with a few for aesthetic</li>
+			<li>Notes switched around with solution to easy absolute placement used.</li>
+			<li>no storage, temporary use</li>
+        </ul>
+    </header>
+	
+</body>
+<!-- There is no javascript for this one -->
+</html>
